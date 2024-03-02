@@ -29,7 +29,7 @@ class _MyAccountState extends State<MyAccount> {
       ),
       body: Padding(
         padding: const EdgeInsets.all(15.0),
-        child: Column(
+        child: ListView(
           children: [
             const Center(
               child: Text(
@@ -56,7 +56,7 @@ class _MyAccountState extends State<MyAccount> {
                         Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => settingState(),
+                          builder: (context) => SettingStateScreen(),
                         ),
                       );
                         
@@ -79,7 +79,7 @@ class _MyAccountState extends State<MyAccount> {
                           Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => passwordscreen(),
+                          builder: (context) => PasswordScreen(),
                         ),
                       );
                         }),
@@ -95,7 +95,7 @@ class _MyAccountState extends State<MyAccount> {
                         Navigator.push(
                         context, 
                         MaterialPageRoute(
-                          builder: (context) => shippingaddress(),
+                          builder: (context) => ShippingAddressScreen(),
                         ),
                       );
 

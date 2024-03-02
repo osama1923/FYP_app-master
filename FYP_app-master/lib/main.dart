@@ -15,6 +15,11 @@ void main() async {
           messagingSenderId: "506182906477",
           projectId: "fyp-01-a1800",
           storageBucket: "fyp-01-a1800.appspot.com"));
+          void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  runApp(MyApp());
+}
 
   runApp(const MyApp());
 }
